@@ -1,0 +1,326 @@
+﻿<HTML>
+<HEAD>
+<TITLE>Web Application Firewall and XML Gateway Overview</TITLE>
+
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+<meta name="keywords" content="hping, netcat, openssl, ikescan, ipsec, scanning, firewall, web application firewall, WAF, hacking, pentest, checkpoint, metasploit, sbd, nokia, ipv6, ssl, ADS, WAF, OWASP, WEBGOAT, Webscarab, brucon, SOAPUI, Tutorial">
+<meta name="description" content="Security and awareness information for the community">
+
+
+</HEAD>
+
+<BODY>
+
+<table align="center">
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td id="toplogo" class="style1">
+		<a target="_self" href="contact.html">contact us</a>
+</td>
+		<td class="right">
+
+		<br>
+
+		</td>
+	</tr>
+	</table>
+
+
+<p>&nbsp;</p>
+
+
+<table align="center">
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle">
+		<table style="width: 800px">
+		</table>
+<!-- Begin Menu -->
+		<table>
+			<tr>
+				<td class="menu" id="navmenu_table"><a href="index.html">Home</a></td>
+				<td class="menu" id="navmenu_table"><a href="links.html">Links</a></td>
+				<td class="menu" id="navmenu_table">Tools</td>
+				<td class="menu" id="navmenu_table"><a href="waf.html">Web Application Firewall 
+				Overview</a>
+				<td class="menu" id="navmenu_table2"></td>
+			</tr>
+			<tr>
+				<td class="menu" id="navmenu_table">&nbsp;</td>
+				<td class="menu" id="navmenu_table">&nbsp;</td>
+				<td class="menu" id="navmenu_table">&nbsp;</td>
+				<td class="menu" id="navmenu_table">&nbsp;<td class="menu" id="navmenu_table2">
+				&nbsp;</td>
+			</tr>
+		</table>
+<!-- End Menu -->
+		</td>
+		<td class="right">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left" style="height: 14px"></td>
+		<td class="middle2" style="height: 14px">You are here: <a id="menulocation" href="index.html">home</a> -&gt; 
+		<a target="_self" id="menulocation" href="waf.html">Web Application Firewall and XML Gateway Overview </a></td>
+		<td class="right" style="height: 14px"></td>
+	</tr>
+	</table>
+<!-- Begin of Table of WAF -->	
+<table align="center">
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">&nbsp;</td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">If you feel that something needs updating, please contact<br>
+&nbsp;</td>
+		<td class="right" style="width: 450px"><script>document.write("<a href='mailto"+ ":waf" + "@radar" + "hack.com'>waf" + "@radar" + "hack.com" + "</a>");</script>&nbsp;<br>
+		<br>
+		</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><strong>Web Application Firewall 
+		Overview</strong></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.applicure.com">http://www.applicure.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.armorlogic.com/">http://www.armorlogic.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.bee-ware.net">http://www.bee-ware.net</a></td>
+		<td class="right" style="width: 450px">Acquired Axilliance</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.binarysec.com">http://www.binarysec.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.bodacion.com">http://www.bodacion.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><a target="_blank" href="http://www.breach.com">
+		http://www.breach.com</a> </td>
+		<td class="right" style="width: 450px">Acquired
+		<a target="_blank" href="http://www.modsecurity.org">http://www.modsecurity.org</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.citrix.com/English/ps2/products/product.asp?contentID=25636">http://www.citrix.com/</a> </td>
+		<td class="right" style="width: 450px">Acquired
+		<a target="_blank" href="http://www.teros.com">http://www.teros.com</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.denyall.com">http://www.denyall.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><a target="_blank" href="http://www.eeye.com">
+		http://www.eeye.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><a target="_blank" href="http://www.f5.com">
+		http://www.f5.com</a></td>
+		<td class="right" style="width: 450px">Acquired Sactum and Watchfire 
+		technology</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.imperva.com">http://www.imperva.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.barracudanetworks.com/ns/products/web-site-firewall-overview.php">http://www.barracudanetworks.com</a></td>
+		<td class="right" style="width: 450px">Acquired
+		<a target="_blank" href="http://www.netcontinuum.com">http://www.netcontinuum.com</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.protegrity.com">http://www.protegrity.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><a target="_blank" href="http://www.s21sec.com">
+		http://www.s21sec.com</a></td>
+		<td class="right" style="width: 450px">Acquired Sentryware</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.modsecurity.org">http://www.modsecurity.org</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left" style="height: 19px"></td>
+		<td class="middle" style="width: 450px; height: 19px;">
+		<a target="_blank" href="http://www.visonys.com">http://www.phion.com</a></td>
+		<td class="right" style="width: 450px; height: 19px;">Acquired
+		<a target="_blank" href="http://www.­visonys.­com">http://www.visonys.com</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.webwisesecurity.com">http://www.webwisesecurity.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.cisco.com/en/US/products/ps9586/index.html">http://www.cisco.com/</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.fortinet.com/products/fortiweb/">http://www.fortinet.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.artofdefence.com">http://www.artofdefence.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.bugsec.com/index.php?q=WebSniper">http://www.bugsec.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://phpids.org/">http://phpids.org/</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.zeus.com/products/zxtmafm/index.html">http://www.zeus.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">&nbsp;</td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px"><strong>XML Gateway Overview</strong></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left" style="height: 19px"></td>
+		<td class="middle" style="width: 450px; height: 19px;">
+		<a target="_blank" href="http://www.datapower.com">http://www.ibm.com</a></td>
+		<td class="right" style="width: 450px; height: 19px;">Acquired Datapower</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://forumsystems.com">http://www.forumsys.com</a></td>
+		<td class="right" style="width: 450px">Acquired by
+		<a target="_blank" href="http://crosschecknet.com/">http://crosschecknet.com/</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.vordel.com/">http://www.vordel.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.layer7tech.com/">http://www.layer7tech.com</a></td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.cisco.com/en/US/products/ps7314/index.html">
+		http://www.cisco.com/</a>&nbsp;</td>
+		<td class="right" style="width: 450px">Acquired
+		<a target="_blank" href="http://www.reactivity.com">http://www.reactivity.com</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.prismtech.com">http://www.prismtech.com</a>&nbsp;</td>
+		<td class="right" style="width: 450px">Acquired
+		<a target="_blank" href="http://www.xtradyne.com">http://www.xtradyne.com</a></td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">
+		<a target="_blank" href="http://www.progress.com">http://www.progress.com</a></td>
+		<td class="right" style="width: 450px">Acquired Actional</td>
+	</tr>
+	<tr>
+		<td class="left">&nbsp;</td>
+		<td class="middle" style="width: 450px">&nbsp;</td>
+		<td class="right" style="width: 450px">&nbsp;</td>
+	</tr>
+	</table>
+<br>
+<br>
+
+&nbsp;
+&nbsp;
+
+
+<table align="center">
+	<tr>
+		<td class="left" style="height: 113px"></td>
+		<td id="botlogo" style="height: 113px"><a target="_blank" href="http://www.brucon.org">
+		<img src="http://2016.brucon.org/skins/common/images/banner.jpg" width="640" height="180" style="float: left"></a></td>
+		<td class="right" style="height: 113px">
+
+		<br>
+
+		</td>
+	</tr>
+	</table>
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7732740-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Google Analytics -->
+
+</BODY>
+</HTML>

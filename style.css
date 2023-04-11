@@ -1,0 +1,68 @@
+﻿  BODY 	{ 
+		background-color: #132F7A; 
+		font-size: x-small;
+		color: white; 
+		font-family: "Tahoma"
+		}
+
+  A  	{ 
+		color: white 
+		}
+
+  TABLE	{
+		font-size: x-small;
+		color: white;
+		}
+
+
+  TD.left       {
+		width: 100px;
+		}
+ 
+  TD.middle      {
+		width: 800px;
+		} 
+
+  TD.middle2     {
+		width: 800px;
+		color: gray;
+		} 
+
+  TD.right      {
+		width: 100px;
+		} 
+		
+		
+		
+#toplogo {
+	background-image: url('images/radarhack.jpg');
+	margin: auto;
+	width: 720px;
+	height: 108px;	
+	text-align: right;
+	vertical-align: bottom;
+	}
+	
+#botlogo {
+
+	margin: auto;
+	width: 480px;
+	height: 112px;	
+	text-align: right;
+	vertical-align: bottom;
+	}
+
+
+#menulocation {
+		color: gray;
+	}
+
+#navmenu_table {
+		width: 150px;
+	}
+
+  TD.menu     {
+		color: gray;
+		text-align: center;
+		font-weight: bold;
+		} 
