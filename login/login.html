@@ -23,7 +23,6 @@
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       statusChangeCallback(response);
     });
-    console.log('Access Token:', response.authResponse.accessToken); 
   }
 
 
@@ -39,6 +38,8 @@
     FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
       statusChangeCallback(response);        // Returns the login status.
     });
+        console.log('Access Token:', response.authResponse.accessToken); 
+
   };
  
   function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
