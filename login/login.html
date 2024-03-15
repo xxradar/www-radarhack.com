@@ -45,10 +45,7 @@
     FB.api('/me', {fields: 'name,email,profile_pic'}, function(response) {
       console.log('Successful login for: ' + response.name + ' ' + response.email);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-    var userInfo = document.getElementById('user-info');
-    userInfo.innerHTML = '<img src="https://graph.facebook.com/' + response.id + '/picture">' + response.name ;
-
+        'Thanks for logging in, ' + response.name + ' ' + response.email + ' !';
       });
   }
 
