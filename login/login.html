@@ -46,7 +46,7 @@
       console.log('Successful login for: ' + response.name + ' ' + response.email + ' ' + response.id);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + ' ' + response.email + ' !';
-        userInfo.innerHTML = 
+        document.getElementById('status') = 
           '<img src="https://graph.facebook.com/' + response.id + '/picture">' + response.name ;
       });
   }
