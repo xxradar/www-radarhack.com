@@ -47,6 +47,17 @@
       document.getElementById('status').innerHTML =
       'Thanks for logging in, ' + response.name + '! Your email is ' + response.email +
       '<br><img src="' + response.picture.data.url + '" alt="Profile Picture">';
+
+    // Construct the URL with the user's name
+    const url = `https://www.kubiosec.tech/?name=${encodeURIComponent(response.name)}`;
+
+    // Send the user's name to the specified URL using fetch
+    fetch(url)
+      .then(response => response.text()) // Assuming you want to process the text response
+      .then(text => console.log(text)) // Log or process the response from the server
+      .catch(error => console.error('Error sending the name:', error));
+
+
       });
   }
 
