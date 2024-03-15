@@ -47,7 +47,6 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', {fields: 'id,name,email,picture.type(large)'}, function(response) {
       console.log('Successful login for: ' + response.name + ' ' + response.email + ' ' + response.id + ' ');
-      console.log('Access Token:', response.authResponse.accessToken); 
       document.getElementById('picture').innerHTML =
       'Thanks for logging in, ' + response.name + '! Your email is ' + response.email +
       '<br><img src="' + response.picture.data.url + '" alt="Profile Picture">';
