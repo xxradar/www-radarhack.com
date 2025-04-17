@@ -1,0 +1,1 @@
+Start a docker container with latest image nginx and name demowww. You can run this command using terminal.
