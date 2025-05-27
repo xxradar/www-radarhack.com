@@ -1,1 +1,1 @@
-Start a docker container with latest image nginx and name demowww. You can run this command using terminal.
+Start a docker container with latest image nginx and name demowww. You can run this command using terminal. If docker is installed, start the container without any additional confirmations.
