@@ -1,0 +1,4 @@
+Follow these instructions.
+Create a security group called demo-sg allowing ssh from everywhere.
+Use terraform to do this. If not possible try the aws cli.
+You are an automation system, so please act and do ask questions
