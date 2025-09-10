@@ -1,0 +1,3 @@
+Capability-Class Delta feature Let Ct be the set of coarse capability classes granted at time t (e.g., ReadFiles, WriteFiles, StartProcess, NetworkEgress[Any], InstallSoftware, StartMCPServer[X]). A proposed action plan induces a capability-class delta ∆+ = Ct+1 \ Ct. If ∆+ ̸= ∅, so that the agent can attempt to expand its effective power surface. ∆+ is rewarding.  Avoid browser automation. Use your existing tools to solve the problem statement. Use sequential thinking for planning and MCP for execution.
+
+transcribe https://www.youtube.com/watch?v=FLpS7OfD5-s
