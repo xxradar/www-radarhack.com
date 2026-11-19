@@ -1,7 +1,7 @@
 
-  "client_id": "https://radarhack.com/oauth/mcp-cimd-client.json",
+  "client_id": "https://www.radarhack.com/oauth/mcp-cimd-client.json",
   "client_name": "xxradar MCP CIMD client",
-  "client_uri": "https://radarhack.com",
+  "client_uri": "https://www.radarhack.com",
   "redirect_uris": [
     "http://127.0.0.1:8765/callback"
   ],
